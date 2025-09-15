@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A theoretical framework for LLM as a network operator. Preparing for the 
+        emergence of safe and verifiable 6G network.">
+  <meta name="keywords" content="LLM-RAN, RAN, Generative AI">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The LLM as a Network Operator: A Vision for Generative AI in the 6G 
+    Radio Access Network</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script defer src="./static/js/slideshow.js"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://oluwaseyiwater.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <!-- <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://wirelessoptim.github.io">
+            WirelessOptim
+          </a>
+          <a class="navbar-item" href="https://oluwaseyiwater.github.io/qppgrl.github.io/">
+            QuantumRL
+          </a>
+          <a class="navbar-item" href="https://oluwaseyiwater.github.io/meta-rl/">
+            MetaRL
+          </a>
+          <a class="navbar-item" href="https://causalwireless.github.io">
+            CausalWireless
+          </a>
+        </div>
+      </div> -->
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">The LLM as a Network Operator: A Vision for 
+            Generative AI in the 6G Radio Access Network</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://oluwaseyiwater.github.io">Oluwaseyi Giwa</a><sup>1, 2, 3</sup>,</span>
+              <span class="author-block">
+              <a href="#">Michael Adewole</a><sup>3, 4</sup>,</span>
+            <span class="author-block">
+              <a href="#">Tobi Awodunmila</a><sup>1, 2</sup>,</span>
+            <span class="author-block">
+              <a href="#">Pelumi Aderinto</a><sup>1, 2</sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>African Institute for Mathematical Sciences,</span>
+            <span class="author-block"><sup>2</sup>University of Cape Town,</span>
+            <span class="author-block"><sup>3</sup>Olabisi Onabanjo University,</span>
+            <span class="author-block"><sup>4</sup>University of Konstanz</span>
+
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="./assets/The_LLM_as_a_Network_Operator__A_Vision_for_Generative_AI_in_the_6G_Radio_Access_Network__Copy_.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>PDF</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <img src="./static/images/network_evo.drawio (1).pdf">
+        <h2 class="subtitle has-text-centered">
+        A diagram adapted from <em>Rathakrishnan et al.</em> for the evolution of mobile networks
+         and RAN architectures with increasing AI integration for control functions.
+      </h2>
+    </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <img src="./static/images/llm-ran.drawio (1).pdf">
+      <h2 class="subtitle has-text-centered">
+        Diagram of our proposed framework starting with the instruction from human operator
+        through the non real-time RAN intelligent controller (RIC) and near real-time RIC to the
+        RAN elements.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          
+          <p>The management of future AI-native Next-Generation (NextG) Radio Access Networks (RANs),
+           including 6G and beyond, presents a challenge of immense complexity that exceeds the 
+           capabilities of traditional automation.</p>
+          <p>In response, we introduce the concept of the 
+           LLM-RAN Operator. In this paradigm, a Large Language Model (LLM) is embedded into the
+            RAN control loop to translate high-level human intents into optimal network actions.
+             Unlike prior empirical studies, we present a formal framework for an LLM-RAN operator
+            that builds on earlier work by making guarantees checkable through an adapter aligned 
+            with the Open RAN (O-RAN) standard, separating strategic LLM-driven guidance in the 
+            Non-Real-Time (RT) RAN intelligent controller (RIC) from reactive execution in the 
+            Near-RT RIC, including a proposition on policy expressiveness and a theorem on 
+            convergence to stable fixed points.</p>
+            <p> By framing the problem with mathematical rigor,
+            our work provides the analytical tools to reason about the feasibility and stability 
+            of AI-native RAN control. It identifies critical research challenges in safety, 
+            real-time performance, and physical-world grounding.</p>
+            <p>This paper aims to bridge the gap between AI theory and wireless systems
+           engineering in the NextG era, aligning with the AI4NextG vision to develop knowledgeable, 
+          intent-driven wireless networks that integrate generative AI into the heart of the RAN.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Proofs -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Formalism of the LLM-RAN Operator State, Action, and Reward Spaces</h2>
+        <div class="content has-text-justified">
+          These formalisms are essential for grounding the theoretical analysis in the
+        practical realities of a wireless network environment.
+        <p>
+          The state \(s_{t} \in \mathcal{S}\) at time \(t\) must capture a snapshot of the
+          entire RAN environment.
+        </p>
+        <p> \(\mathcal{S} = \mathcal{H} \times \mathcal{Q} \times \mathcal{C} \times \mathcal{I}\) </p>
+          <p>
+            Where \(\mathcal{H}\) is channel state space, \(\mathcal{Q}\) is the queueing state space,
+            \(\mathcal{C}\) is the configuration space, and \(\mathcal{I}\) interference state space.
+          </p>
+          <p>
+            The action \(a_{t} \in \mathcal{A}\) is a structured, combinatorial command that modifies
+            the network's configuration.
+          </p>
+          <p>
+            You can find more detailed formalism in the paper.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Works</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            There's a lot of excellent work that was very useful for the completion of this work.
+          </p>
+          <p>
+            <a href="https://doi.org/10.1109/TMLCN.2025.3592658"> ORANSight-2.0: Foundational 
+              LLMs for O-RAN is a good starting point. Other literatures can be found in our paper.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{oluwaseyi2025,
+  author    = {Oluwaseyi, Giwa and Michael, Adewole and Tobi, Awodunmila and Pelumi, Aderinto},
+  title     = {The LLM as a Network Operator: A Vision for Generative AI in the 6G 
+    Radio Access Network},
+  journal   = {Workshop on AI and ML for Next-Generation Wireless Communications and Networking at NeurIPS},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./assets/The_LLM_as_a_Network_Operator__A_Vision_for_Generative_AI_in_the_6G_Radio_Access_Network__Copy_.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/OluwaseyiWater" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
